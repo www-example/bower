@@ -1,0 +1,23 @@
+{
+  "name": "bower example",
+  "homepage": "https://github.com/www-example/bower",
+  "authors": [
+    "byron <xiaobosun@12xue.com.cn>"
+  ],
+  "description": "12xue bower example",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.8.3",
+    "layer": "^3.0.3",
+    "jquery-3.2.1": "jquery#^3.2.1"
+  }
+}
