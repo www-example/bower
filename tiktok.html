@@ -12,83 +12,83 @@
             box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        
+
         body {
-            background: linear-gradient(135deg, #000000, #2d2d2d);
-            color: #fff;
+            background: linear-gradient(135deg, #ffffff, #f5f5f5);
+            color: #333;
             min-height: 100vh;
             padding: 20px;
         }
-        
+
         .container {
             max-width: 500px;
             margin: 0 auto;
-            background-color: #121212;
+            background-color: #ffffff;
             border-radius: 20px;
             overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         }
-        
+
         header {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 15px 20px;
-            background-color: #000;
-            border-bottom: 1px solid #333;
+            background-color: #ffffff;
+            border-bottom: 1px solid #eee;
         }
-        
+
         .logo-area {
             display: flex;
             align-items: center;
             gap: 10px;
         }
-        
+
         .logo-area img {
             width: 30px;
             height: 30px;
             border-radius: 4px;
         }
-        
+
         .logo-area h1 {
             font-size: 20px;
             font-weight: 700;
-            color: #fff;
+            color: #000;
         }
-        
+
         .search-area {
             position: relative;
             flex: 1;
             max-width: 200px;
         }
-        
+
         .search-area input {
             width: 100%;
             padding: 8px 35px 8px 12px;
             border-radius: 20px;
-            border: none;
-            background-color: #2d2d2d;
-            color: #fff;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+            color: #333;
             font-size: 14px;
         }
-        
+
         .search-area i {
             position: absolute;
             right: 12px;
             top: 50%;
             transform: translateY(-50%);
-            color: #6b7280;
+            color: #999;
         }
-        
+
         .tabs {
             display: flex;
-            background-color: #1a1a1a;
+            background-color: #f0f0f0;
             border-radius: 12px;
             padding: 4px;
             margin: 20px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
         }
-        
+
         .tabs div {
             flex: 1;
             text-align: center;
@@ -97,174 +97,166 @@
             font-weight: 500;
             cursor: pointer;
             transition: all 0.3s ease;
+            color: #666;
         }
-        
+
         .tabs div.active {
             background-color: #000;
             color: #fff;
         }
-        
+
         .balance {
             display: flex;
             align-items: center;
             gap: 8px;
             margin: 0 20px 20px;
             padding: 15px;
-            background-color: #1a1a1a;
+            background-color: #f9f9f9;
             border-radius: 12px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
         }
-        
+
         .balance-icon {
             display: flex;
             align-items: center;
         }
-        
+
         .balance-amount {
             font-size: 18px;
             font-weight: 700;
-            color: #ffd700;
+            color: #ff0050;
         }
-        
+
         .username-input {
             margin: 0 20px 20px;
         }
-        
+
         .username-input label {
             display: block;
             margin-bottom: 8px;
             font-size: 14px;
-            color: #9ca3af;
+            color: #666;
         }
-        
+
         .username-input input {
             width: 100%;
             padding: 12px 15px;
             border-radius: 8px;
-            border: 1px solid #333;
-            background-color: #1a1a1a;
-            color: #fff;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+            color: #333;
             font-size: 16px;
             transition: border-color 0.3s;
         }
-        
+
         .username-input input:focus {
             outline: none;
             border-color: #ff0050;
         }
-        
+
         .recharge-info {
             display: flex;
             justify-content: space-between;
             margin: 0 20px 20px;
             padding: 12px 15px;
-            background-color: #1a1a1a;
+            background-color: #f9f9f9;
             border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
             font-size: 14px;
         }
-        
+
         .recharge-info span:first-child {
             font-weight: 500;
         }
-        
+
         .recharge-info span:last-child {
-            color: #00ff88;
+            color: #27ae60;
             font-weight: 500;
         }
-        
+
         .coins-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 15px;
             margin: 0 20px 20px;
         }
-        
+
         .coin-card {
-            background: linear-gradient(145deg, #1a1a1a, #2d2d2d);
+            background: linear-gradient(145deg, #f9f9f9, #ffffff);
             border-radius: 12px;
             padding: 15px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
             cursor: pointer;
             transition: all 0.3s ease;
-            border: 2px solid transparent;
+            border: 1px solid #f0f0f0;
             position: relative;
             overflow: hidden;
         }
-        
+
         .coin-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(255, 0, 80, 0.3);
+            box-shadow: 0 8px 20px rgba(255, 0, 80, 0.1);
         }
-        
+
         .coin-card.selected {
-            border-color: #ff0050;
-            background: linear-gradient(145deg, #2a1a2a, #3d2d3d);
+            border-color: rgb(244, 176, 48);
+            background: rgb(248, 247, 189);
         }
-        
-        .coin-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 3px;
-            background: linear-gradient(90deg, #ff0050, #ffd700);
-        }
-        
+
         .coin-count {
             display: flex;
             align-items: center;
             gap: 8px;
             margin-bottom: 8px;
         }
-        
+
         .coin-count i {
-            color: #ffd700;
+            color: #ff0050;
             font-size: 18px;
         }
-        
+
         .coin-count span {
             font-weight: 700;
             font-size: 16px;
         }
-        
+
         .coin-price {
             font-size: 14px;
-            color: #9ca3af;
+            color: #666;
         }
-        
+
         .custom-desc {
             font-size: 12px;
-            color: #9ca3af;
+            color: #999;
             margin-top: 5px;
         }
-        
+
         .payment-methods {
             margin: 0 20px 20px;
         }
-        
+
         .payment-methods h3 {
             margin-bottom: 15px;
             font-size: 16px;
+            color: #333;
         }
-        
+
         .payment-icons {
             display: flex;
             gap: 15px;
             align-items: center;
         }
-        
+
         .payment-icons img {
             border-radius: 4px;
             filter: brightness(0.8);
             transition: filter 0.3s;
         }
-        
+
         .payment-icons img:hover {
             filter: brightness(1);
         }
-        
+
         .recharge-btn {
             width: calc(100% - 40px);
             margin: 0 20px 20px;
@@ -277,18 +269,18 @@
             font-weight: 600;
             cursor: pointer;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(255, 0, 80, 0.4);
+            box-shadow: 0 4px 15px rgba(255, 0, 80, 0.2);
         }
-        
+
         .recharge-btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(255, 0, 80, 0.6);
+            box-shadow: 0 6px 20px rgba(255, 0, 80, 0.3);
         }
-        
+
         .recharge-btn:active {
             transform: translateY(0);
         }
-        
+
         /* 模态框样式 */
         .modal-overlay {
             position: fixed;
@@ -296,7 +288,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background-color: rgba(0, 0, 0, 0.8);
+            background-color: rgba(0, 0, 0, 0.5);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -305,124 +297,128 @@
             visibility: hidden;
             transition: all 0.3s ease;
         }
-        
+
         .modal-overlay.active {
             opacity: 1;
             visibility: visible;
         }
-        
+
         .modal {
-            background-color: #1a1a1a;
+            background-color: #ffffff;
             border-radius: 16px;
             width: 90%;
             max-width: 400px;
             overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
             transform: scale(0.9);
             transition: transform 0.3s ease;
+            border: 1px solid #eee;
         }
-        
+
         .modal-overlay.active .modal {
             transform: scale(1);
         }
-        
+
         .modal-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 20px;
-            border-bottom: 1px solid #333;
+            border-bottom: 1px solid #eee;
         }
-        
+
         .modal-header h2 {
             font-size: 18px;
             font-weight: 600;
+            color: #333;
         }
-        
+
         .close-btn {
             background: none;
             border: none;
             font-size: 24px;
             cursor: pointer;
-            color: #9ca3af;
+            color: #999;
             transition: color 0.3s;
         }
-        
+
         .close-btn:hover {
-            color: #fff;
+            color: #333;
         }
-        
+
         .modal-body {
             padding: 20px;
         }
-        
+
         .amount-display {
             display: flex;
             justify-content: center;
             margin-bottom: 20px;
         }
-        
+
         .amount-container {
             display: flex;
             align-items: center;
             gap: 8px;
             padding: 10px 20px;
-            background-color: #2d2d2d;
+            background-color: #f9f9f9;
             border-radius: 8px;
         }
-        
+
         .coin-icon {
             display: inline-block;
             width: 20px;
             height: 20px;
-            background-color: #ffd700;
+            background-color: #ff0050;
             border-radius: 50%;
         }
-        
+
         .amount-value {
             font-size: 24px;
             font-weight: 700;
-            color: #ffd700;
+            color: #ff0050;
         }
-        
+
         .keypad {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 10px;
             margin-bottom: 20px;
         }
-        
+
         .keypad button {
             padding: 15px;
             border: none;
-            background-color: #2d2d2d;
+            background-color: #f9f9f9;
             border-radius: 8px;
             font-size: 18px;
             font-weight: 500;
-            color: #fff;
+            color: #333;
             cursor: pointer;
             transition: background-color 0.3s;
         }
-        
+
         .keypad button:hover {
-            background-color: #3d3d3d;
+            background-color: #e9e9e9;
         }
-        
+
         .keypad button:last-child {
             grid-column: span 3;
             background-color: #ff0050;
+            color: #fff;
         }
-        
+
         .keypad button:last-child:hover {
             background-color: #ff3366;
         }
-        
+
         .total {
             text-align: center;
             margin-bottom: 20px;
             font-size: 16px;
+            color: #333;
         }
-        
+
         .submit-btn {
             width: 100%;
             padding: 15px;
@@ -435,16 +431,17 @@
             cursor: pointer;
             transition: opacity 0.3s;
         }
-        
+
         .submit-btn:disabled {
-            background: #6b7280;
+            background: #ddd;
             cursor: not-allowed;
+            color: #999;
         }
-        
+
         .submit-btn:not(:disabled):hover {
             opacity: 0.9;
         }
-        
+
         /* 倒计时弹窗 */
         .countdown-overlay {
             position: fixed;
@@ -452,7 +449,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background-color: rgba(0, 0, 0, 0.8);
+            background-color: rgba(0, 0, 0, 0.5);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -461,58 +458,60 @@
             visibility: hidden;
             transition: all 0.3s ease;
         }
-        
+
         .countdown-overlay.active {
             opacity: 1;
             visibility: visible;
         }
-        
+
         .countdown-modal {
-            background-color: #1a1a1a;
+            background-color: #ffffff;
             border-radius: 16px;
             width: 90%;
             max-width: 300px;
             padding: 30px;
             text-align: center;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
             transform: scale(0.9);
             transition: transform 0.3s ease;
+            border: 1px solid #eee;
         }
-        
+
         .countdown-overlay.active .countdown-modal {
             transform: scale(1);
         }
-        
+
         .spinner-container {
             margin-bottom: 20px;
         }
-        
+
         .spinner {
             width: 60px;
             height: 60px;
-            border: 5px solid #333;
+            border: 5px solid #ddd;
             border-top: 5px solid #ff0050;
             border-radius: 50%;
             animation: spin 2s linear infinite;
             margin: 0 auto;
         }
-        
+
         @keyframes spin {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
-        
+
         .countdown-title {
             font-size: 18px;
             margin-bottom: 10px;
+            color: #333;
         }
-        
+
         .countdown-subtitle {
-            color: #9ca3af;
+            color: #999;
             margin-bottom: 20px;
             font-size: 14px;
         }
-        
+
         .countdown-circle {
             width: 80px;
             height: 80px;
@@ -524,12 +523,13 @@
             margin: 0 auto;
             position: relative;
         }
-        
+
         .countdown-time {
             font-size: 16px;
             font-weight: 600;
+            color: #333;
         }
-        
+
         /* 支付成功弹窗 */
         .success-overlay {
             position: fixed;
@@ -537,7 +537,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background-color: rgba(0, 0, 0, 0.8);
+            background-color: rgba(0, 0, 0, 0.5);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -546,45 +546,47 @@
             visibility: hidden;
             transition: all 0.3s ease;
         }
-        
+
         .success-overlay.active {
             opacity: 1;
             visibility: visible;
         }
-        
+
         .success-modal {
-            background-color: #1a1a1a;
+            background-color: #ffffff;
             border-radius: 16px;
             width: 90%;
             max-width: 300px;
             padding: 30px;
             text-align: center;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
             transform: scale(0.9);
             transition: transform 0.3s ease;
+            border: 1px solid #eee;
         }
-        
+
         .success-overlay.active .success-modal {
             transform: scale(1);
         }
-        
+
         .success-icon {
             margin-bottom: 20px;
-            color: #00ff88;
+            color: #27ae60;
             font-size: 50px;
         }
-        
+
         .success-title {
             font-size: 18px;
             margin-bottom: 10px;
+            color: #333;
         }
-        
+
         .success-message {
-            color: #9ca3af;
+            color: #666;
             margin-bottom: 5px;
             font-size: 14px;
         }
-        
+
         .close-success-btn {
             margin-top: 20px;
             padding: 10px 20px;
@@ -597,29 +599,29 @@
             cursor: pointer;
             transition: opacity 0.3s;
         }
-        
+
         .close-success-btn:hover {
             opacity: 0.9;
         }
-        
+
         /* 响应式设计 */
         @media (max-width: 480px) {
             .container {
                 border-radius: 15px;
             }
-            
+
             .coins-grid {
                 grid-template-columns: 1fr;
             }
-            
+
             header {
                 padding: 10px 15px;
             }
-            
+
             .logo-area h1 {
                 font-size: 18px;
             }
-            
+
             .search-area {
                 max-width: 150px;
             }
@@ -627,370 +629,385 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="logo-area">
-                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0OCA0OCI+PHBhdGggZmlsbD0iIzAwMDAwMCIgZD0iTTM0LjA1IDI0LjAzYzAgNi4wMy00Ljg5IDEwLjkyLTEwLjkyIDEwLjkyUzEyLjIxIDMwLjA2IDEyLjIxIDI0LjAzYzAtNi4wMyA0Ljg5LTEwLjkyIDEwLjkyLTEwLjkyczEwLjkyIDQuODkgMTAuOTIgMTAuOTJ6Ii8+PHBhdGggZmlsbD0iI2ZmMDA1MCIgZD0iTTM0LjA1IDI0LjAzYzAgNi4wMy00Ljg5IDEwLjkyLTEwLjkyIDEwLjkyUzEyLjIxIDMwLjA2IDEyLjIxIDI0LjAzYzAtNi4wMyA0Ljg5LTEwLjkyIDEwLjkyLTEwLjkyczEwLjkyIDQuODkgMTAuOTIgMTAuOTJ6Ii8+PHBhdGggZmlsbD0iIzAwZmZmZiIgZD0iTTI0Ljg0IDE1LjQydjE3LjIyYy0uNzUtLjE3LTEuNDktLjQyLTIuMTktLjc1VjE0LjY3YzEuMzcuNDUgMi4xOSAxLjg0IDIuMTkgMy4yNXoiLz48L3N2Zz4=" alt="TikTok Logo">
-                <h1>TikTok</h1>
-            </div>
-            <div class="search-area">
-                <input type="text" placeholder="Search">
-                <i class="fas fa-search"></i>
-            </div>
-        </header>
-        
-        <div class="tabs">
-            <div class="active">Get Coins</div>
-            <div>View transaction history</div>
+<div class="container">
+    <header>
+        <div class="logo-area">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 118 42" height="42" width="118" alt="TikTok" class="css-1cdjqym-5e6d46e3--StyledLogoLight e1487oh21"><path fill="#25F4EE" d="M9.875 16.842v-1.119A9 9 0 0 0 8.7 15.64c-4.797-.006-8.7 3.9-8.7 8.708a8.7 8.7 0 0 0 3.718 7.134A8.68 8.68 0 0 1 1.38 25.55c0-4.737 3.794-8.598 8.495-8.707"></path><path fill="#25F4EE" d="M10.086 29.526c2.14 0 3.89-1.707 3.967-3.83l.006-18.968h3.463a7 7 0 0 1-.11-1.202h-4.726l-.006 18.969a3.98 3.98 0 0 1-3.967 3.829 3.9 3.9 0 0 1-1.846-.46 3.95 3.95 0 0 0 3.22 1.662m13.905-16.36v-1.055a6.5 6.5 0 0 1-3.583-1.068 6.57 6.57 0 0 0 3.583 2.123"></path><path fill="#FE2C55" d="M20.409 11.044a6.54 6.54 0 0 1-1.616-4.316h-1.265a6.56 6.56 0 0 0 2.88 4.316M8.706 20.365a3.98 3.98 0 0 0-3.973 3.976c0 1.528.869 2.858 2.134 3.523a3.94 3.94 0 0 1-.754-2.321 3.98 3.98 0 0 1 3.973-3.976c.409 0 .805.07 1.175.185v-4.833a9 9 0 0 0-1.175-.083c-.07 0-.134.006-.204.006v3.708a4 4 0 0 0-1.176-.185"></path><path fill="#FE2C55" d="M23.992 13.166v3.676c-2.453 0-4.727-.786-6.58-2.116v9.622c0 4.8-3.902 8.713-8.706 8.713a8.67 8.67 0 0 1-4.988-1.579 8.7 8.7 0 0 0 6.368 2.781c4.797 0 8.707-3.906 8.707-8.714v-9.621a11.25 11.25 0 0 0 6.579 2.116v-4.73q-.72-.002-1.38-.148"></path><path fill="#000" d="M17.413 24.348v-9.622a11.25 11.25 0 0 0 6.58 2.116v-3.676a6.57 6.57 0 0 1-3.584-2.123 6.6 6.6 0 0 1-2.888-4.315H14.06l-.006 18.968a3.98 3.98 0 0 1-3.967 3.83A3.99 3.99 0 0 1 6.86 27.87a3.99 3.99 0 0 1-2.133-3.523A3.98 3.98 0 0 1 8.7 20.372c.409 0 .805.07 1.175.185v-3.708c-4.701.103-8.495 3.964-8.495 8.701 0 2.29.888 4.373 2.338 5.933a8.67 8.67 0 0 0 4.988 1.58c4.798 0 8.707-3.913 8.707-8.714m12.635-11.17h14.775l-1.355 4.232h-3.832v15.644h-4.778V17.41l-4.804.006zm38.984 0h15.12l-1.355 4.232h-4.17v15.644h-4.785V17.41l-4.804.006zM45.73 19.502h4.733v13.553h-4.708zm6.617-6.374h4.733v9.257l4.689-4.61h5.646l-5.934 5.76 6.644 9.52h-5.213l-4.433-6.598-1.405 1.362v5.236H52.34V13.128zm50.143 0h4.734v9.257l4.688-4.61h5.647l-5.934 5.76 6.643 9.52h-5.206l-4.433-6.598-1.405 1.362v5.236h-4.734zm-54.397 4.826a2.384 2.384 0 0 0 2.382-2.384 2.384 2.384 0 1 0-2.382 2.384"></path><path fill="#25F4EE" d="M83.545 24.942a8.11 8.11 0 0 1 7.473-8.087 9 9 0 0 0-.709-.026c-4.478 0-8.106 3.631-8.106 8.113s3.628 8.113 8.106 8.113c.21 0 .498-.013.71-.026-4.178-.326-7.475-3.823-7.475-8.087"></path><path fill="#FE2C55" d="M92.858 16.83c-.217 0-.505.012-.716.025a8.11 8.11 0 0 1 7.468 8.087 8.11 8.11 0 0 1-7.468 8.087c.211.02.499.026.716.026 4.478 0 8.106-3.631 8.106-8.113s-3.628-8.113-8.106-8.113"></path><path fill="#000" d="M91.58 28.887a3.94 3.94 0 0 1-3.94-3.945 3.94 3.94 0 1 1 7.882 0c0 2.18-1.77 3.945-3.942 3.945m0-12.058c-4.477 0-8.106 3.631-8.106 8.113s3.629 8.113 8.106 8.113 8.106-3.631 8.106-8.113-3.628-8.113-8.106-8.113"></path></svg>
         </div>
-        
-        <div class="balance">
+        <div class="search-area">
+            <input type="text" placeholder="Search">
+            <i class="fas fa-search"></i>
+        </div>
+    </header>
+
+    <div class="tabs">
+        <div class="active">Get Coins</div>
+        <div>View transaction history</div>
+    </div>
+
+    <div class="balance">
             <span class="balance-icon">
                 <i class="fas fa-coins"></i>
             </span>
-            <span class="balance-amount">155,666,836,787</span>
-        </div>
-        
-        <div class="username-input">
-            <label for="username">Enter Username</label>
-            <input type="text" id="username" placeholder="Enter Username">
-        </div>
-        
-        <div class="recharge-info">
-            <span>Recharge:</span>
-            <span>Save up to 15% compared to in-app purchase</span>
-        </div>
-        
-        <div class="coins-grid">
-            <div class="coin-card" data-coins="70" data-price="0.91">
-                <div class="coin-count">
-                    <i class="fas fa-music"></i>
-                    <span>70</span>
-                </div>
-                <p class="coin-price">$0.91</p>
-            </div>
-            
-            <div class="coin-card" data-coins="350" data-price="4.55">
-                <div class="coin-count">
-                    <i class="fas fa-music"></i>
-                    <span>350</span>
-                </div>
-                <p class="coin-price">$4.55</p>
-            </div>
-            
-            <div class="coin-card" data-coins="700" data-price="9.10">
-                <div class="coin-count">
-                    <i class="fas fa-music"></i>
-                    <span>700</span>
-                </div>
-                <p class="coin-price">$9.10</p>
-            </div>
-            
-            <div class="coin-card" data-coins="1400" data-price="18.20">
-                <div class="coin-count">
-                    <i class="fas fa-music"></i>
-                    <span>1,400</span>
-                </div>
-                <p class="coin-price">$18.20</p>
-            </div>
-            
-            <div class="coin-card" data-coins="3500" data-price="45.50">
-                <div class="coin-count">
-                    <i class="fas fa-music"></i>
-                    <span>3,500</span>
-                </div>
-                <p class="coin-price">$45.50</p>
-            </div>
-            
-            <div class="coin-card" data-coins="7000" data-price="91.00">
-                <div class="coin-count">
-                    <i class="fas fa-music"></i>
-                    <span>7,000</span>
-                </div>
-                <p class="coin-price">$91.00</p>
-            </div>
-            
-            <div class="coin-card" data-coins="17500" data-price="227.50">
-                <div class="coin-count">
-                    <i class="fas fa-music"></i>
-                    <span>17,500</span>
-                </div>
-                <p class="coin-price">$227.50</p>
-            </div>
-            
-            <div class="coin-card" data-coins="custom" data-price="custom">
-                <div class="coin-count">
-                    <i class="fas fa-music"></i>
-                    <span>Custom</span>
-                </div>
-                <p class="custom-desc">Large amount supported</p>
-            </div>
-        </div>
-        
-        <div class="payment-methods">
-            <h3>Payment method</h3>
-            <div class="payment-icons">
-                <i class="fab fa-cc-visa" style="color: #1a1f71; font-size: 30px;"></i>
-                <i class="fab fa-cc-amex" style="color: #2e77bc; font-size: 30px;"></i>
-                <i class="fab fa-cc-mastercard" style="color: #eb001b; font-size: 30px;"></i>
-                <i class="fab fa-cc-discover" style="color: #ff6000; font-size: 30px;"></i>
-            </div>
-        </div>
-        
-        <button class="recharge-btn">Select a coin package to recharge</button>
+        <span class="balance-amount">155,666,836,787</span>
     </div>
-    
-    <!-- 自定义金额模态框 -->
-    <div class="modal-overlay">
-        <div class="modal">
-            <div class="modal-header">
-                <h2>Custom</h2>
-                <button class="close-btn">×</button>
-            </div>
-            <div class="modal-body">
-                <div class="amount-display">
-                    <div class="amount-container">
-                        <span class="coin-icon"></span>
-                        <span class="amount-value">0</span>
-                    </div>
-                </div>
-                <div class="keypad">
-                    <!-- 数字键盘按钮将通过JavaScript动态生成 -->
-                </div>
-                <div class="total">total $<span class="amount">0.00</span></div>
-                <button class="submit-btn" disabled>Recharge</button>
-            </div>
-        </div>
+
+    <div class="username-input">
+        <label for="username">Enter Username</label>
+        <input type="text" id="username" placeholder="Enter Username">
     </div>
-    
-    <!-- 倒计时弹窗 -->
-    <div class="countdown-overlay">
-        <div class="countdown-modal">
-            <div class="spinner-container">
-                <div class="spinner"></div>
-            </div>
-            <h3 class="countdown-title">Processing your payment</h3>
-            <p class="countdown-subtitle">This could take a few seconds</p>
-            <div class="countdown-circle">
-                <span class="countdown-time">05:00</span>
-            </div>
-        </div>
+
+    <div class="recharge-info">
+        <span>Recharge:</span>
+        <span>Save up to 15% compared to in-app purchase</span>
     </div>
-    
-    <!-- 支付成功弹窗 -->
-    <div class="success-overlay">
-        <div class="success-modal">
-            <div class="success-icon">
-                <i class="fas fa-check-circle"></i>
+
+    <div class="coins-grid">
+        <div class="coin-card" data-coins="70" data-price="0.91">
+            <div class="coin-count">
+                <i class="fas">
+                    <svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path d="M512 512m-512 0a512 512 0 1 0 1024 0 512 512 0 1 0-1024 0Z" fill="#F6EE3C"></path><path d="M512 512m-356.181333 0a356.181333 356.181333 0 1 0 712.362666 0 356.181333 356.181333 0 1 0-712.362666 0Z" fill="#F4B030"></path><path d="M611.882667 305.365333a29.184 29.184 0 0 1 41.258666 0.725334 31.232 31.232 0 0 1 0 43.434666l-66.858666 69.12h15.530666c17.493333 0 31.872 13.056 34.005334 29.952l0.256 4.266667c0 18.944-15.36 34.304-34.261334 34.304h-42.453333v20.522667h67.2c17.493333 0 31.872 13.056 33.962667 29.952l0.298666 4.266666c0 18.944-15.36 34.304-34.261333 34.304H559.36v113.152a42.666667 42.666667 0 0 1-37.674667 42.368l-4.949333 0.298667h-3.712a42.666667 42.666667 0 0 1-42.666667-42.666667v-113.194666H383.36a34.261333 34.261333 0 0 1-33.962667-29.909334l-0.298666-4.309333c0-18.901333 15.36-34.261333 34.261333-34.261333h86.912v-20.565334h-42.410667a34.261333 34.261333 0 0 1-33.962666-29.909333l-0.256-4.309333c0-18.901333 15.36-34.261333 34.218666-34.261334h11.605334l-66.816-69.12a31.232 31.232 0 0 1 0-43.434666 29.184 29.184 0 0 1 41.984 0l98.218666 101.589333 98.304-101.589333z" fill="#F6EE3C"></path></svg>
+                </i>
+                <span>70</span>
             </div>
-            <h3 class="success-title">Payment completed</h3>
-            <p class="success-message">
-                Your recharged <span class="success-coins">0</span> coins
-            </p>
-            <p class="success-message">
-                <span class="username-display"></span>
-            </p>
-            <button class="close-success-btn">Close</button>
+            <p class="coin-price">$0.91</p>
+        </div>
+
+        <div class="coin-card" data-coins="350" data-price="4.55">
+            <div class="coin-count">
+                <i class="fas">
+                    <svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path d="M512 512m-512 0a512 512 0 1 0 1024 0 512 512 0 1 0-1024 0Z" fill="#F6EE3C"></path><path d="M512 512m-356.181333 0a356.181333 356.181333 0 1 0 712.362666 0 356.181333 356.181333 0 1 0-712.362666 0Z" fill="#F4B030"></path><path d="M611.882667 305.365333a29.184 29.184 0 0 1 41.258666 0.725334 31.232 31.232 0 0 1 0 43.434666l-66.858666 69.12h15.530666c17.493333 0 31.872 13.056 34.005334 29.952l0.256 4.266667c0 18.944-15.36 34.304-34.261334 34.304h-42.453333v20.522667h67.2c17.493333 0 31.872 13.056 33.962667 29.952l0.298666 4.266666c0 18.944-15.36 34.304-34.261333 34.304H559.36v113.152a42.666667 42.666667 0 0 1-37.674667 42.368l-4.949333 0.298667h-3.712a42.666667 42.666667 0 0 1-42.666667-42.666667v-113.194666H383.36a34.261333 34.261333 0 0 1-33.962667-29.909334l-0.298666-4.309333c0-18.901333 15.36-34.261333 34.261333-34.261333h86.912v-20.565334h-42.410667a34.261333 34.261333 0 0 1-33.962666-29.909333l-0.256-4.309333c0-18.901333 15.36-34.261333 34.218666-34.261334h11.605334l-66.816-69.12a31.232 31.232 0 0 1 0-43.434666 29.184 29.184 0 0 1 41.984 0l98.218666 101.589333 98.304-101.589333z" fill="#F6EE3C"></path></svg>
+                </i>
+                <span>350</span>
+            </div>
+            <p class="coin-price">$4.55</p>
+        </div>
+
+        <div class="coin-card" data-coins="700" data-price="9.10">
+            <div class="coin-count">
+                <i class="fas">
+                    <svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path d="M512 512m-512 0a512 512 0 1 0 1024 0 512 512 0 1 0-1024 0Z" fill="#F6EE3C"></path><path d="M512 512m-356.181333 0a356.181333 356.181333 0 1 0 712.362666 0 356.181333 356.181333 0 1 0-712.362666 0Z" fill="#F4B030"></path><path d="M611.882667 305.365333a29.184 29.184 0 0 1 41.258666 0.725334 31.232 31.232 0 0 1 0 43.434666l-66.858666 69.12h15.530666c17.493333 0 31.872 13.056 34.005334 29.952l0.256 4.266667c0 18.944-15.36 34.304-34.261334 34.304h-42.453333v20.522667h67.2c17.493333 0 31.872 13.056 33.962667 29.952l0.298666 4.266666c0 18.944-15.36 34.304-34.261333 34.304H559.36v113.152a42.666667 42.666667 0 0 1-37.674667 42.368l-4.949333 0.298667h-3.712a42.666667 42.666667 0 0 1-42.666667-42.666667v-113.194666H383.36a34.261333 34.261333 0 0 1-33.962667-29.909334l-0.298666-4.309333c0-18.901333 15.36-34.261333 34.261333-34.261333h86.912v-20.565334h-42.410667a34.261333 34.261333 0 0 1-33.962666-29.909333l-0.256-4.309333c0-18.901333 15.36-34.261333 34.218666-34.261334h11.605334l-66.816-69.12a31.232 31.232 0 0 1 0-43.434666 29.184 29.184 0 0 1 41.984 0l98.218666 101.589333 98.304-101.589333z" fill="#F6EE3C"></path></svg>
+                </i>
+                <span>700</span>
+            </div>
+            <p class="coin-price">$9.10</p>
+        </div>
+
+        <div class="coin-card" data-coins="1400" data-price="18.20">
+            <div class="coin-count">
+                <i class="fas">
+                    <svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path d="M512 512m-512 0a512 512 0 1 0 1024 0 512 512 0 1 0-1024 0Z" fill="#F6EE3C"></path><path d="M512 512m-356.181333 0a356.181333 356.181333 0 1 0 712.362666 0 356.181333 356.181333 0 1 0-712.362666 0Z" fill="#F4B030"></path><path d="M611.882667 305.365333a29.184 29.184 0 0 1 41.258666 0.725334 31.232 31.232 0 0 1 0 43.434666l-66.858666 69.12h15.530666c17.493333 0 31.872 13.056 34.005334 29.952l0.256 4.266667c0 18.944-15.36 34.304-34.261334 34.304h-42.453333v20.522667h67.2c17.493333 0 31.872 13.056 33.962667 29.952l0.298666 4.266666c0 18.944-15.36 34.304-34.261333 34.304H559.36v113.152a42.666667 42.666667 0 0 1-37.674667 42.368l-4.949333 0.298667h-3.712a42.666667 42.666667 0 0 1-42.666667-42.666667v-113.194666H383.36a34.261333 34.261333 0 0 1-33.962667-29.909334l-0.298666-4.309333c0-18.901333 15.36-34.261333 34.261333-34.261333h86.912v-20.565334h-42.410667a34.261333 34.261333 0 0 1-33.962666-29.909333l-0.256-4.309333c0-18.901333 15.36-34.261333 34.218666-34.261334h11.605334l-66.816-69.12a31.232 31.232 0 0 1 0-43.434666 29.184 29.184 0 0 1 41.984 0l98.218666 101.589333 98.304-101.589333z" fill="#F6EE3C"></path></svg>
+                </i>
+                <span>1,400</span>
+            </div>
+            <p class="coin-price">$18.20</p>
+        </div>
+
+        <div class="coin-card" data-coins="3500" data-price="45.50">
+            <div class="coin-count">
+                <i class="fas">
+                    <svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path d="M512 512m-512 0a512 512 0 1 0 1024 0 512 512 0 1 0-1024 0Z" fill="#F6EE3C"></path><path d="M512 512m-356.181333 0a356.181333 356.181333 0 1 0 712.362666 0 356.181333 356.181333 0 1 0-712.362666 0Z" fill="#F4B030"></path><path d="M611.882667 305.365333a29.184 29.184 0 0 1 41.258666 0.725334 31.232 31.232 0 0 1 0 43.434666l-66.858666 69.12h15.530666c17.493333 0 31.872 13.056 34.005334 29.952l0.256 4.266667c0 18.944-15.36 34.304-34.261334 34.304h-42.453333v20.522667h67.2c17.493333 0 31.872 13.056 33.962667 29.952l0.298666 4.266666c0 18.944-15.36 34.304-34.261333 34.304H559.36v113.152a42.666667 42.666667 0 0 1-37.674667 42.368l-4.949333 0.298667h-3.712a42.666667 42.666667 0 0 1-42.666667-42.666667v-113.194666H383.36a34.261333 34.261333 0 0 1-33.962667-29.909334l-0.298666-4.309333c0-18.901333 15.36-34.261333 34.261333-34.261333h86.912v-20.565334h-42.410667a34.261333 34.261333 0 0 1-33.962666-29.909333l-0.256-4.309333c0-18.901333 15.36-34.261333 34.218666-34.261334h11.605334l-66.816-69.12a31.232 31.232 0 0 1 0-43.434666 29.184 29.184 0 0 1 41.984 0l98.218666 101.589333 98.304-101.589333z" fill="#F6EE3C"></path></svg>
+                </i>
+                <span>3,500</span>
+            </div>
+            <p class="coin-price">$45.50</p>
+        </div>
+
+        <div class="coin-card" data-coins="7000" data-price="91.00">
+            <div class="coin-count">
+                <i class="fas">
+                    <svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path d="M512 512m-512 0a512 512 0 1 0 1024 0 512 512 0 1 0-1024 0Z" fill="#F6EE3C"></path><path d="M512 512m-356.181333 0a356.181333 356.181333 0 1 0 712.362666 0 356.181333 356.181333 0 1 0-712.362666 0Z" fill="#F4B030"></path><path d="M611.882667 305.365333a29.184 29.184 0 0 1 41.258666 0.725334 31.232 31.232 0 0 1 0 43.434666l-66.858666 69.12h15.530666c17.493333 0 31.872 13.056 34.005334 29.952l0.256 4.266667c0 18.944-15.36 34.304-34.261334 34.304h-42.453333v20.522667h67.2c17.493333 0 31.872 13.056 33.962667 29.952l0.298666 4.266666c0 18.944-15.36 34.304-34.261333 34.304H559.36v113.152a42.666667 42.666667 0 0 1-37.674667 42.368l-4.949333 0.298667h-3.712a42.666667 42.666667 0 0 1-42.666667-42.666667v-113.194666H383.36a34.261333 34.261333 0 0 1-33.962667-29.909334l-0.298666-4.309333c0-18.901333 15.36-34.261333 34.261333-34.261333h86.912v-20.565334h-42.410667a34.261333 34.261333 0 0 1-33.962666-29.909333l-0.256-4.309333c0-18.901333 15.36-34.261333 34.218666-34.261334h11.605334l-66.816-69.12a31.232 31.232 0 0 1 0-43.434666 29.184 29.184 0 0 1 41.984 0l98.218666 101.589333 98.304-101.589333z" fill="#F6EE3C"></path></svg>
+                </i>
+                <span>7,000</span>
+            </div>
+            <p class="coin-price">$91.00</p>
+        </div>
+
+        <div class="coin-card" data-coins="17500" data-price="227.50">
+            <div class="coin-count">
+                <i class="fas">
+                    <svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path d="M512 512m-512 0a512 512 0 1 0 1024 0 512 512 0 1 0-1024 0Z" fill="#F6EE3C"></path><path d="M512 512m-356.181333 0a356.181333 356.181333 0 1 0 712.362666 0 356.181333 356.181333 0 1 0-712.362666 0Z" fill="#F4B030"></path><path d="M611.882667 305.365333a29.184 29.184 0 0 1 41.258666 0.725334 31.232 31.232 0 0 1 0 43.434666l-66.858666 69.12h15.530666c17.493333 0 31.872 13.056 34.005334 29.952l0.256 4.266667c0 18.944-15.36 34.304-34.261334 34.304h-42.453333v20.522667h67.2c17.493333 0 31.872 13.056 33.962667 29.952l0.298666 4.266666c0 18.944-15.36 34.304-34.261333 34.304H559.36v113.152a42.666667 42.666667 0 0 1-37.674667 42.368l-4.949333 0.298667h-3.712a42.666667 42.666667 0 0 1-42.666667-42.666667v-113.194666H383.36a34.261333 34.261333 0 0 1-33.962667-29.909334l-0.298666-4.309333c0-18.901333 15.36-34.261333 34.261333-34.261333h86.912v-20.565334h-42.410667a34.261333 34.261333 0 0 1-33.962666-29.909333l-0.256-4.309333c0-18.901333 15.36-34.261333 34.218666-34.261334h11.605334l-66.816-69.12a31.232 31.232 0 0 1 0-43.434666 29.184 29.184 0 0 1 41.984 0l98.218666 101.589333 98.304-101.589333z" fill="#F6EE3C"></path></svg>
+                </i>
+                <span>17,500</span>
+            </div>
+            <p class="coin-price">$227.50</p>
+        </div>
+
+        <div class="coin-card" data-coins="custom" data-price="custom">
+            <div class="coin-count">
+                <i class="fas">
+                    <svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path d="M512 512m-512 0a512 512 0 1 0 1024 0 512 512 0 1 0-1024 0Z" fill="#F6EE3C"></path><path d="M512 512m-356.181333 0a356.181333 356.181333 0 1 0 712.362666 0 356.181333 356.181333 0 1 0-712.362666 0Z" fill="#F4B030"></path><path d="M611.882667 305.365333a29.184 29.184 0 0 1 41.258666 0.725334 31.232 31.232 0 0 1 0 43.434666l-66.858666 69.12h15.530666c17.493333 0 31.872 13.056 34.005334 29.952l0.256 4.266667c0 18.944-15.36 34.304-34.261334 34.304h-42.453333v20.522667h67.2c17.493333 0 31.872 13.056 33.962667 29.952l0.298666 4.266666c0 18.944-15.36 34.304-34.261333 34.304H559.36v113.152a42.666667 42.666667 0 0 1-37.674667 42.368l-4.949333 0.298667h-3.712a42.666667 42.666667 0 0 1-42.666667-42.666667v-113.194666H383.36a34.261333 34.261333 0 0 1-33.962667-29.909334l-0.298666-4.309333c0-18.901333 15.36-34.261333 34.261333-34.261333h86.912v-20.565334h-42.410667a34.261333 34.261333 0 0 1-33.962666-29.909333l-0.256-4.309333c0-18.901333 15.36-34.261333 34.218666-34.261334h11.605334l-66.816-69.12a31.232 31.232 0 0 1 0-43.434666 29.184 29.184 0 0 1 41.984 0l98.218666 101.589333 98.304-101.589333z" fill="#F6EE3C"></path></svg>
+                </i>
+                <span>Custom</span>
+            </div>
+            <p class="custom-desc">Large amount supported</p>
         </div>
     </div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // 元素选择
-            const coinCards = document.querySelectorAll('.coin-card');
-            const customCoinCard = document.querySelector('.coin-card[data-coins="custom"]');
-            const modalOverlay = document.querySelector('.modal-overlay');
-            const closeModalBtn = document.querySelector('.close-btn');
-            const keypad = document.querySelector('.keypad');
-            const amountValue = document.querySelector('.amount-value');
-            const totalAmount = document.querySelector('.amount');
-            const submitBtn = document.querySelector('.submit-btn');
-            const rechargeBtn = document.querySelector('.recharge-btn');
-            const countdownOverlay = document.querySelector('.countdown-overlay');
-            const countdownTime = document.querySelector('.countdown-time');
-            const successOverlay = document.querySelector('.success-overlay');
-            const successCoins = document.querySelector('.success-coins');
-            const usernameDisplay = document.querySelector('.username-display');
-            const closeSuccessBtn = document.querySelector('.close-success-btn');
-            const usernameInput = document.getElementById('username');
-            
-            // 变量
-            let selectedCoinCard = null;
-            let customAmount = 0;
-            let countdownInterval;
-            let countdownSeconds = 300; // 5分钟
-            
-            // 创建键盘按钮
-            const keypadButtons = [
-                '1', '2', '3',
-                '4', '5', '6',
-                '7', '8', '9',
-                'Clear', '0', 'Delete'
-            ];
-            
-            keypadButtons.forEach(value => {
-                const button = document.createElement('button');
-                button.textContent = value;
-                button.addEventListener('click', () => handleKeypadInput(value));
-                keypad.appendChild(button);
-            });
-            
-            // 事件监听器
-            coinCards.forEach(card => {
-                card.addEventListener('click', () => {
-                    if (card === customCoinCard) {
-                        // 打开自定义模态框
-                        modalOverlay.classList.add('active');
-                        customAmount = 0;
-                        updateCustomAmount();
-                    } else {
-                        // 选择常规硬币包
-                        coinCards.forEach(c => c.classList.remove('selected'));
-                        card.classList.add('selected');
-                        selectedCoinCard = card;
-                        
-                        // 更新充值按钮文本
-                        const coins = card.getAttribute('data-coins');
-                        const price = card.getAttribute('data-price');
-                        rechargeBtn.textContent = `Recharge ${coins} Coins - $${price}`;
-                    }
-                });
-            });
-            
-            closeModalBtn.addEventListener('click', () => {
-                modalOverlay.classList.remove('active');
-            });
-            
-            modalOverlay.addEventListener('click', (e) => {
-                if (e.target === modalOverlay) {
-                    modalOverlay.classList.remove('active');
-                }
-            });
-            
-            rechargeBtn.addEventListener('click', () => {
-                if (!selectedCoinCard && customAmount === 0) {
-                    alert('Please select a coin package or set a custom amount');
-                    return;
-                }
-                
-                if (!usernameInput.value.trim()) {
-                    alert('Please enter a username');
-                    return;
-                }
-                
-                // 显示倒计时模态框
-                countdownOverlay.classList.add('active');
-                
-                // 开始倒计时
-                startCountdown();
-                
-                // 模拟支付处理
-                setTimeout(() => {
-                    countdownOverlay.classList.remove('active');
-                    showSuccessModal();
-                }, 5000);
-            });
-            
-            closeSuccessBtn.addEventListener('click', () => {
-                successOverlay.classList.remove('active');
-                resetForm();
-            });
-            
-            successOverlay.addEventListener('click', (e) => {
-                if (e.target === successOverlay) {
-                    successOverlay.classList.remove('active');
-                    resetForm();
-                }
-            });
-            
-            // 函数
-            function handleKeypadInput(value) {
-                if (value === 'Clear') {
+    <div class="payment-methods">
+        <h3>Payment method</h3>
+        <div class="payment-icons">
+            <i class="fab fa-cc-visa" style="color: #1a1f71; font-size: 30px;"></i>
+            <i class="fab fa-cc-amex" style="color: #2e77bc; font-size: 30px;"></i>
+            <i class="fab fa-cc-mastercard" style="color: #eb001b; font-size: 30px;"></i>
+            <i class="fab fa-cc-discover" style="color: #ff6000; font-size: 30px;"></i>
+        </div>
+    </div>
+
+    <button class="recharge-btn">Select a coin package to recharge</button>
+</div>
+
+<!-- 自定义金额模态框 -->
+<div class="modal-overlay">
+    <div class="modal">
+        <div class="modal-header">
+            <h2>Custom</h2>
+            <button class="close-btn">×</button>
+        </div>
+        <div class="modal-body">
+            <div class="amount-display">
+                <div class="amount-container">
+                    <span class="coin-icon"></span>
+                    <span class="amount-value">0</span>
+                </div>
+            </div>
+            <div class="keypad">
+                <!-- 数字键盘按钮将通过JavaScript动态生成 -->
+            </div>
+            <div class="total">total $<span class="amount">0.00</span></div>
+            <button class="submit-btn" disabled>Recharge</button>
+        </div>
+    </div>
+</div>
+
+<!-- 倒计时弹窗 -->
+<div class="countdown-overlay">
+    <div class="countdown-modal">
+        <div class="spinner-container">
+            <div class="spinner"></div>
+        </div>
+        <h3 class="countdown-title">Processing your payment</h3>
+        <p class="countdown-subtitle">This could take a few seconds</p>
+        <div class="countdown-circle">
+            <span class="countdown-time">05:00</span>
+        </div>
+    </div>
+</div>
+
+<!-- 支付成功弹窗 -->
+<div class="success-overlay">
+    <div class="success-modal">
+        <div class="success-icon">
+            <i class="fas fa-check-circle"></i>
+        </div>
+        <h3 class="success-title">Payment completed</h3>
+        <p class="success-message">
+            Your recharged <span class="success-coins">0</span> coins
+        </p>
+        <p class="success-message">
+            <span class="username-display"></span>
+        </p>
+        <button class="close-success-btn">Close</button>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // 元素选择
+        const coinCards = document.querySelectorAll('.coin-card');
+        const customCoinCard = document.querySelector('.coin-card[data-coins="custom"]');
+        const modalOverlay = document.querySelector('.modal-overlay');
+        const closeModalBtn = document.querySelector('.close-btn');
+        const keypad = document.querySelector('.keypad');
+        const amountValue = document.querySelector('.amount-value');
+        const totalAmount = document.querySelector('.amount');
+        const submitBtn = document.querySelector('.submit-btn');
+        const rechargeBtn = document.querySelector('.recharge-btn');
+        const countdownOverlay = document.querySelector('.countdown-overlay');
+        const countdownTime = document.querySelector('.countdown-time');
+        const successOverlay = document.querySelector('.success-overlay');
+        const successCoins = document.querySelector('.success-coins');
+        const usernameDisplay = document.querySelector('.username-display');
+        const closeSuccessBtn = document.querySelector('.close-success-btn');
+        const usernameInput = document.getElementById('username');
+
+        // 变量
+        let selectedCoinCard = null;
+        let customAmount = 0;
+        let countdownInterval;
+        let countdownSeconds = 300; // 5分钟
+
+        // 创建键盘按钮
+        const keypadButtons = [
+            '1', '2', '3',
+            '4', '5', '6',
+            '7', '8', '9',
+            'Clear', '0', 'Delete'
+        ];
+
+        keypadButtons.forEach(value => {
+            const button = document.createElement('button');
+            button.textContent = value;
+            button.addEventListener('click', () => handleKeypadInput(value));
+            keypad.appendChild(button);
+        });
+
+        // 事件监听器
+        coinCards.forEach(card => {
+            card.addEventListener('click', () => {
+                if (card === customCoinCard) {
+                    // 打开自定义模态框
+                    modalOverlay.classList.add('active');
                     customAmount = 0;
-                } else if (value === 'Delete') {
-                    customAmount = Math.floor(customAmount / 10);
+                    updateCustomAmount();
                 } else {
-                    const num = parseInt(value);
-                    if (!isNaN(num)) {
-                        // 限制为6位数字
-                        if (customAmount.toString().length < 6) {
-                            customAmount = customAmount * 10 + num;
-                        }
-                    }
-                }
-                
-                updateCustomAmount();
-            }
-            
-            function updateCustomAmount() {
-                amountValue.textContent = customAmount.toLocaleString();
-                
-                // 计算价格（假设每枚硬币0.013美元）
-                const price = (customAmount * 0.013).toFixed(2);
-                totalAmount.textContent = price;
-                
-                // 启用/禁用提交按钮
-                submitBtn.disabled = customAmount === 0;
-                
-                // 更新提交按钮文本
-                submitBtn.textContent = `Recharge ${customAmount.toLocaleString()} Coins - $${price}`;
-            }
-            
-            function startCountdown() {
-                let seconds = countdownSeconds;
-                
-                countdownInterval = setInterval(() => {
-                    seconds--;
-                    
-                    if (seconds < 0) {
-                        clearInterval(countdownInterval);
-                        return;
-                    }
-                    
-                    const minutes = Math.floor(seconds / 60);
-                    const remainingSeconds = seconds % 60;
-                    
-                    countdownTime.textContent = `${minutes.toString().padStart(2, '0')}:${remainingSeconds.toString().padStart(2, '0')}`;
-                }, 1000);
-            }
-            
-            function showSuccessModal() {
-                let coins = 0;
-                
-                if (selectedCoinCard) {
-                    coins = selectedCoinCard.getAttribute('data-coins');
-                } else if (customAmount > 0) {
-                    coins = customAmount;
-                }
-                
-                successCoins.textContent = coins.toLocaleString();
-                usernameDisplay.textContent = usernameInput.value;
-                successOverlay.classList.add('active');
-                
-                // 清除倒计时
-                clearInterval(countdownInterval);
-            }
-            
-            function resetForm() {
-                coinCards.forEach(card => card.classList.remove('selected'));
-                selectedCoinCard = null;
-                customAmount = 0;
-                usernameInput.value = '';
-                rechargeBtn.textContent = 'Select a coin package to recharge';
-            }
-            
-            // 自定义模态框中的提交按钮
-            submitBtn.addEventListener('click', () => {
-                if (customAmount > 0) {
-                    modalOverlay.classList.remove('active');
-                    selectedCoinCard = null;
-                    
-                    // 更新充值按钮
-                    const price = (customAmount * 0.013).toFixed(2);
-                    rechargeBtn.textContent = `Recharge ${customAmount.toLocaleString()} Coins - $${price}`;
+                    // 选择常规硬币包
+                    coinCards.forEach(c => c.classList.remove('selected'));
+                    card.classList.add('selected');
+                    selectedCoinCard = card;
+
+                    // 更新充值按钮文本
+                    const coins = card.getAttribute('data-coins');
+                    const price = card.getAttribute('data-price');
+                    rechargeBtn.textContent = `Recharge ${coins} Coins - $${price}`;
                 }
             });
         });
-    </script>
+
+        closeModalBtn.addEventListener('click', () => {
+            modalOverlay.classList.remove('active');
+        });
+
+        modalOverlay.addEventListener('click', (e) => {
+            if (e.target === modalOverlay) {
+                modalOverlay.classList.remove('active');
+            }
+        });
+
+        rechargeBtn.addEventListener('click', () => {
+            if (!selectedCoinCard && customAmount === 0) {
+                alert('Please select a coin package or set a custom amount');
+                return;
+            }
+
+            if (!usernameInput.value.trim()) {
+                alert('Please enter a username');
+                return;
+            }
+
+            // 显示倒计时模态框
+            countdownOverlay.classList.add('active');
+
+            // 开始倒计时
+            startCountdown();
+
+            // 模拟支付处理
+            setTimeout(() => {
+                countdownOverlay.classList.remove('active');
+                showSuccessModal();
+            }, 5000);
+        });
+
+        closeSuccessBtn.addEventListener('click', () => {
+            successOverlay.classList.remove('active');
+            resetForm();
+        });
+
+        successOverlay.addEventListener('click', (e) => {
+            if (e.target === successOverlay) {
+                successOverlay.classList.remove('active');
+                resetForm();
+            }
+        });
+
+        // 函数
+        function handleKeypadInput(value) {
+            if (value === 'Clear') {
+                customAmount = 0;
+            } else if (value === 'Delete') {
+                customAmount = Math.floor(customAmount / 10);
+            } else {
+                const num = parseInt(value);
+                if (!isNaN(num)) {
+                    // 限制为6位数字
+                    if (customAmount.toString().length < 6) {
+                        customAmount = customAmount * 10 + num;
+                    }
+                }
+            }
+
+            updateCustomAmount();
+        }
+
+        function updateCustomAmount() {
+            amountValue.textContent = customAmount.toLocaleString();
+
+            // 计算价格（假设每枚硬币0.013美元）
+            const price = (customAmount * 0.013).toFixed(2);
+            totalAmount.textContent = price;
+
+            // 启用/禁用提交按钮
+            submitBtn.disabled = customAmount === 0;
+
+            // 更新提交按钮文本
+            submitBtn.textContent = `Recharge ${customAmount.toLocaleString()} Coins - $${price}`;
+        }
+
+        function startCountdown() {
+            let seconds = countdownSeconds;
+
+            countdownInterval = setInterval(() => {
+                seconds--;
+
+                if (seconds < 0) {
+                    clearInterval(countdownInterval);
+                    return;
+                }
+
+                const minutes = Math.floor(seconds / 60);
+                const remainingSeconds = seconds % 60;
+
+                countdownTime.textContent = `${minutes.toString().padStart(2, '0')}:${remainingSeconds.toString().padStart(2, '0')}`;
+            }, 1000);
+        }
+
+        function showSuccessModal() {
+            let coins = 0;
+
+            if (selectedCoinCard) {
+                coins = selectedCoinCard.getAttribute('data-coins');
+            } else if (customAmount > 0) {
+                coins = customAmount;
+            }
+
+            successCoins.textContent = coins.toLocaleString();
+            usernameDisplay.textContent = usernameInput.value;
+            successOverlay.classList.add('active');
+
+            // 清除倒计时
+            clearInterval(countdownInterval);
+        }
+
+        function resetForm() {
+            coinCards.forEach(card => card.classList.remove('selected'));
+            selectedCoinCard = null;
+            customAmount = 0;
+            usernameInput.value = '';
+            rechargeBtn.textContent = 'Select a coin package to recharge';
+        }
+
+        // 自定义模态框中的提交按钮
+        submitBtn.addEventListener('click', () => {
+            if (customAmount > 0) {
+                modalOverlay.classList.remove('active');
+                selectedCoinCard = null;
+
+                // 更新充值按钮
+                const price = (customAmount * 0.013).toFixed(2);
+                rechargeBtn.textContent = `Recharge ${customAmount.toLocaleString()} Coins - $${price}`;
+            }
+        });
+    });
+</script>
 </body>
 </html>
